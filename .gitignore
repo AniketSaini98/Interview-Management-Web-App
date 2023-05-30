@@ -1,0 +1,7 @@
+node_modules/
+.env
+dump.rdb
+package-lock.json
+production_logs/
+.vscode/
+.vercel
