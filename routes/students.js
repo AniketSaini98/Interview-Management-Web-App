@@ -10,6 +10,7 @@ const studentsController = require("../controllers/students_controller");
 
 //Access the Students Controller's add() Function @ '/students/add' route.
 router.post("/add", passport.checkAuthentication, studentsController.add);
+
 //Access the Students Controller's delete() Function @ '/students/delete/:id' route.
 router.delete(
 	"/delete/:id",

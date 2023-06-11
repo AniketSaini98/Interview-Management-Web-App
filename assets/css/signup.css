@@ -3,198 +3,152 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.login_container #login {
-  border: 2px solid var(--logo-color);
-  padding: 10px;
-  margin-top: 10rem;
-  margin-bottom: 3.5rem;
-  width: 50%;
-  min-width: 270px !important;
-  min-height: 420px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.login_container #login form {
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
-  padding: 10px;
-}
-
-.login_container #login form h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--logo-color);
-  margin: 10px 0;
-  opacity: 0.7;
-  text-align: center;
-}
-
-.login_container #login form .form-group {
-  margin-bottom: 1rem;
-}
-
-.login_container #login form .form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--logo-color);
-}
-
-.login_container #login form .form-group input {
-  box-shadow: none;
-  outline: none;
-  border: none;
-  border-radius: 0%;
-  border-bottom: 1px solid var(--logo-color);
-  background: transparent;
-  color: var(--logo-color);
-  font-weight: 400;
-  letter-spacing: 0.02rem;
-}
-
-.login_container #login form .form-group input::placeholder {
-  color: var(--logo-color);
-  opacity: 0.7;
-}
-
-.login_container #login form .form-group input:focus {
-  box-shadow: none;
-  outline: none;
-  border-bottom: 1px solid var(--logo-color);
-}
-
-.login_container #login form .signup-btn {
-  margin: auto;
-  margin-top: 1rem;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #000000;
-  border: 1px solid #000000;
-  cursor: pointer;
-  box-shadow: none;
-}
-
-.login_container #login form .signup-btn:hover {
-  background-image: radial-gradient(
-    circle 860px at 11.8% 33.5%,
-    rgba(240, 30, 92, 1) 0%,
-    rgba(244, 49, 74, 1) 30.5%,
-    rgba(249, 75, 37, 1) 56.1%,
-    rgba(250, 88, 19, 1) 75.6%,
-    rgba(253, 102, 2, 1) 100.2%
-  );
-  border: none;
-  color: #ffffff;
-}
-
-.login_container #login form .signup-btn:focus {
-  box-shadow: none;
-  outline: none;
-  border: none;
-}
-
-.login_container #login form .social-login {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.login_container #login form .social-login .btn {
-  width: 40%;
-  min-width: 50px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #000000;
-  border: 1px solid #000000;
-  cursor: pointer;
-  box-shadow: none;
-}
-
-.login_container #login form .social-login .btn:hover {
-  color: #ffffff;
-  border: none;
-  background-image: radial-gradient(
-    circle farthest-corner at 92.3% 71.5%,
-    rgba(83, 138, 214, 1) 0%,
-    rgba(134, 231, 214, 1) 90%
-  );
-}
-
-.login_container #login form .social-login .btn:focus {
-  box-shadow: none;
-  outline: none;
-  border: none;
-}
-
-.login_container #login form .social-login .btn img {
-  width: 20px;
-  height: 20px;
-  border: 50%;
-}
-
-.login_container #login form .social-login .google-btn {
-  min-width: 220px;
-}
-
-.login_container #login form .social-login .google-btn:hover {
-  border: none;
-  color: #ffffff;
-  background-image: radial-gradient(
-    circle 325px at 19.2% 64.8%,
-    rgba(254, 62, 101, 1) 9.7%,
-    rgba(166, 24, 146, 1) 91.3%
-  );
-}
-
-@media screen and (max-width: 850px) {
+  align-items: center; }
   .login_container #login {
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    border: 2px solid var(--logo-color);
+    padding: 10px;
     margin-top: 10rem;
     margin-bottom: 3.5rem;
-  }
-}
-
-@media screen and (max-height: 555px) {
-  .login_container #login {
-    margin-top: 150px;
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .login_container #login form h2 {
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .login_container #login form .social-login {
+    width: 50%;
+    min-width: 270px !important;
+    min-height: 420px;
+    display: flex;
     justify-content: center;
-    gap: 2rem;
-  }
-}
+    align-items: center;
+    box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); }
+    @media screen and (max-width: 850px) {
+      .login_container #login {
+        margin-top: 10rem;
+        margin-bottom: 3.5rem; } }
+    @media screen and (max-height: 555px) {
+      .login_container #login {
+        margin-top: 150px;
+        margin-bottom: 50px; } }
+    .login_container #login form {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      padding: 10px; }
+      .login_container #login form h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--logo-color);
+        margin: 10px 0;
+        opacity: 0.7;
+        text-align: center; }
+        @media screen and (max-width: 850px) {
+          .login_container #login form h2 {
+            margin-bottom: 1.5rem; } }
+      .login_container #login form .form-group {
+        margin-bottom: 1rem; }
+        .login_container #login form .form-group label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+          font-weight: 600;
+          color: var(--logo-color); }
+        .login_container #login form .form-group input {
+          box-shadow: none;
+          outline: none;
+          border: none;
+          border-radius: 0%;
+          border-bottom: 1px solid var(--logo-color);
+          background: transparent;
+          color: var(--logo-color);
+          font-weight: 400;
+          letter-spacing: 0.02rem; }
+          .login_container #login form .form-group input::placeholder {
+            color: var(--logo-color);
+            opacity: 0.7; }
+          .login_container #login form .form-group input:focus {
+            box-shadow: none;
+            outline: none;
+            border-bottom: 1px solid var(--logo-color); }
+      .login_container #login form .signup-btn {
+        margin-top: 10px;
+        -webkit-appearance: none;
+        background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+        background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+        background-size: 500%;
+        border: none;
+        border-radius: 5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        color: #fff;
+        cursor: pointer;
+        font: 1.5em Raleway, sans-serif;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        height: 4rem;
+        letter-spacing: 0.05em;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 100%;
+        color: #000000; }
+        .login_container #login form .signup-btn:hover {
+          animation-name: gradient;
+          -webkit-animation-name: gradient;
+          animation-duration: 2s;
+          -webkit-animation-duration: s;
+          animation-iteration-count: 1;
+          -webkit-animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          -webkit-animation-fill-mode: forwards; }
 
-@media screen and (max-width: 850px) {
-  .login_container #login form .social-login .login-btn {
-    min-width: 220px;
-  }
-}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  100% {
+    background-position: 100%; } }
+      .login_container #login form .social-login {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        flex-wrap: wrap; }
+        @media screen and (max-width: 850px) {
+          .login_container #login form .social-login {
+            justify-content: center;
+            gap: 2rem; } }
+        .login_container #login form .social-login .btn {
+          width: 40%;
+          min-width: 50px;
+          padding: 0.7rem 1rem;
+          font-size: 1rem;
+          font-weight: 600;
+          color: #000000;
+          border-radius: 5rem;
+          cursor: pointer;
+          box-shadow: none;
+          outline: none;
+          border: 2px solid #000000; }
+          .login_container #login form .social-login .btn:focus {
+            box-shadow: none;
+            outline: none;
+            border: none; }
+          .login_container #login form .social-login .btn img {
+            width: 20px;
+            height: 20px;
+            border: 50%; }
+        .login_container #login form .social-login .google-btn {
+          min-width: 220px; }
+        .login_container #login form .social-login .google-btn:hover {
+          background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+          border: none; }
+        @media screen and (max-width: 850px) {
+          .login_container #login form .social-login .login-btn {
+            min-width: 220px; } }
+        .login_container #login form .social-login .login-btn:hover {
+          background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+          border: none; }

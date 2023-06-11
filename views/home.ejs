@@ -58,7 +58,12 @@
 <div class="homepage">
 	<!-- Banner -->
 	<div class="banner">
-		<h2>Career Camp 👨‍🏫</h2>
+		<h2>
+			Career Camp
+		</h2>
+
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ikvz7qhc.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
 	</div>
 	<!-- Dashboard -->
 	<div class="dashboard">
@@ -68,11 +73,12 @@
 			<!-- Accordion -->
 			<div class="accordion" id="students">
 				<!-- Don't use let with this loop here -->
-				<% for(student of students){ %>
-				<!-- Accordion Item -->
-				<%- include('_student-accordion.ejs'); %>
-				<!-- Accordion Item -->
+				<% for (student of students) { %>
+					<!-- Accordion Item -->
+					<% include('_student-accordion.ejs', { interview: student.interview }); %>
+					<!-- Accordion Item -->
 				<% } %>
+				  
 			</div>
 			<!-- Add New Student Form -->
 			<form action="/students/add" method="post" class="student-form">

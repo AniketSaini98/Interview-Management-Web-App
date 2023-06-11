@@ -206,17 +206,31 @@ module.exports.delete = async (req, res) => {
 		}
 
 		//Find the interview slots
+		// let interviews = await Interview.find({ company: company._id });
+		// //If the interview slots are not found
+		// if (interviews.length === 0) {
+		// 	await company.remove();
+		// 	return res.status(200).json({
+		// 		status: "success",
+		// 		message: "Company Visit Cancelled Successfully 🎊 🥳",
+		// 		students: [],
+		// 		id: req.params.company,
+		// 	});
+		// }
+
 		let interviews = await Interview.find({ company: company._id });
-		//If the interview slots are not found
+
+		// If the interview slots are not found
 		if (interviews.length === 0) {
-			await company.remove();
-			return res.status(200).json({
-				status: "success",
-				message: "Company Visit Cancelled Successfully 🎊 🥳",
-				students: [],
-				id: req.params.company,
-			});
+		await Company.deleteOne({ _id: company._id }); // Use deleteOne instead of remove
+		return res.status(200).json({
+			status: "success",
+			message: "Company Visit Cancelled Successfully 🎊 🥳",
+			students: [],
+			id: req.params.company,
+		});
 		}
+
 
 		//Find the result of the interview slots
 		let results = await Result.find({ company: company._id });

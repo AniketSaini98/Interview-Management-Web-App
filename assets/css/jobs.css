@@ -5,97 +5,67 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: auto;
-}
-
-.jobPortal .jobPage {
-  margin-top: 7rem;
-  padding: 7px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.jobPortal .jobPage .card {
-  border-radius: 10px;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  min-width: 320px;
-  min-height: 320px;
-  transition: all 0.25s ease-in-out;
-}
-
-.jobPortal .jobPage .card:hover {
-  background-color: rgba(255, 233, 174, 0.85);
-}
-
-.jobPortal .jobPage .card .card-header {
-  text-align: center;
-}
-
-.jobPortal .jobPage .card .card-body {
-  width: 100%;
-  border-top-left-radius: 0.6rem;
-  border-top-right-radius: 0.6rem;
-  background-image: linear-gradient(to left, #bdbbbe 0%, #9d9ea3 100%),
-    radial-gradient(
-      88% 271%,
-      rgba(255, 255, 255, 0.25) 0%,
-      rgba(254, 254, 254, 0.25) 1%,
-      rgba(0, 0, 0, 0.25) 100%
-    ),
-    radial-gradient(
-      50% 100%,
-      rgba(255, 255, 255, 0.3) 0%,
-      rgba(0, 0, 0, 0.3) 100%
-    );
-  -blend-mode: normal, lighten, soft-light;
-}
-
-.jobPortal .jobPage .card .card-body .card-title {
-  margin-bottom: 1.8rem;
-  text-align: center;
-}
-
-.jobPortal .jobPage .card .card-body .card-text {
-  font-size: 1rem;
-  text-align: center;
-}
-
-.jobPortal .jobPage .card .body .card-text span {
-  font-weight: 500;
-}
-
-.jobPortal .jobPage .card .card-body .card-text span:first-child {
-  font-weight: 600;
-}
-
-.jobPortal .jobPage .card .card-body a {
-  background-image: linear-gradient(
-    to right,
-    #f78ca0 0%,
-    #f9748f 19%,
-    #fd868c 60%,
-    #fe9a8b 100%
-  );
-  margin-top: 1rem;
-  text-decoration: none;
-  color: var(--logo-color);
-  border-radius: 7px;
-  padding: 0.5rem;
-  border: 1px solid var(--logo-color);
-  transition: all 0.15s ease-in-out;
-}
-
-.jobPortal .jobPage .card .card-body a:hover {
-  background-color: var(--logo-color);
-  color: var(--accent-color);
-}
-
-@media screen and (max-width: 400px) {
-  .jobPortal .jobPage .card {
-    min-width: 280px;
-  }
-}
+  margin: auto; }
+  .jobPortal .jobPage {
+    margin-top: 7rem;
+    padding: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; }
+    .jobPortal .jobPage .card {
+      border-radius: 10px;
+      background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+      background-blend-mode: normal, lighten, soft-light;
+      min-width: 320px;
+      min-height: 320px;
+      transition: all 0.25s ease-in-out; }
+      .jobPortal .jobPage .card:hover {
+        background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%); }
+      @media screen and (max-width: 400px) {
+        .jobPortal .jobPage .card {
+          min-width: 280px; } }
+      .jobPortal .jobPage .card .card-head {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .jobPortal .jobPage .card .card-headh5 {
+          text-decoration: none; }
+      .jobPortal .jobPage .card .card-header {
+        background: transparent; }
+      .jobPortal .jobPage .card .card-body {
+        width: 100%;
+        background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); }
+        .jobPortal .jobPage .card .card-body:hover {
+          background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%); }
+        .jobPortal .jobPage .card .card-body .card-title {
+          margin-bottom: 1.8rem;
+          text-align: center; }
+        .jobPortal .jobPage .card .card-body .card-text {
+          font-size: 1rem;
+          text-align: center; }
+          .jobPortal .jobPage .card .card-body .card-text span {
+            font-weight: 500; }
+          .jobPortal .jobPage .card .card-body .card-text span:first-child {
+            font-weight: 600; }
+        .jobPortal .jobPage .card .card-body a {
+          margin-top: 1rem;
+          text-decoration: none;
+          background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+          background-blend-mode: normal, lighten, soft-light;
+          color: var(--logo-color);
+          border-radius: 7px;
+          padding: 0.5rem;
+          border: 1px solid var(--logo-color);
+          transition: all 0.15s ease-in-out; }
+          .jobPortal .jobPage .card .card-body a:hover {
+            background: #D31027;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #EA384D, #D31027);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #EA384D, #D31027);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: #ffffff;
+            border: none; }

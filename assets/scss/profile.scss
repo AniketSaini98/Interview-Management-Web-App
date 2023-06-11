@@ -9,7 +9,6 @@
 	margin: auto;
 	//---------Update Profile---------
 	#updateProfile {
-		border: 2px solid var(--logo-color);
 		padding: 10px;
 		margin-top: 10rem;
 		margin-bottom: 3.5rem;
@@ -20,11 +19,14 @@
 		justify-content: center;
 		align-items: center;
 		box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.5);
-		background: rgba(255, 233, 174, 0.8);
+		background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 		backdrop-filter: blur(5px);
 		-webkit-backdrop-filter: blur(5px);
 		border-radius: 10px;
-		border: 1px solid rgba(255, 255, 255, 0.5);
 		@media screen and (max-width: 850px) {
 			margin-top: 10rem;
 			margin-bottom: 3.5rem;
@@ -69,11 +71,12 @@
 				//---------File Upload---------
 				.upload-wrapper {
 					position: relative;
+					bottom: 25px;
 					overflow: hidden;
 					display: inline-block;
 					min-width: 250px;
 					min-height: 250px;
-					border-radius: 10px;
+					border-radius: 100%;
 					box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.5);
 					z-index: 1;
 					img {
@@ -156,24 +159,48 @@
 					}
 					//---------Submit Button---------
 					.submit-btn {
-						margin: auto;
-						margin-top: 1rem;
-						width: 100%;
-						padding: 0.5rem 1rem;
-						font-size: 1rem;
-						font-weight: 600;
-						color: var(--accent-color);
-						background-color: var(--logo-color);
-						border: 1px solid var(--accent-color);
-						border-radius: 10px;
-						cursor: pointer;
-						box-shadow: none;
-						outline: none;
+						margin-top: 10px;
+						-webkit-appearance: none;
+						background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+						background: linear-gradient(to right, #1bb364 0%, #052a3b 50%, #ec2614 100%);
+						background-size: 500%;
 						border: none;
-						&:focus {
-							box-shadow: none;
-							outline: none;
-							border: none;
+						box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+						color: #fff;
+						cursor: pointer;
+						font: 1.5em Raleway, sans-serif;
+						font-weight: bold;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						height: 3.5rem;
+						letter-spacing: 0.05em;
+						outline: none;
+						-webkit-tap-highlight-color: transparent;
+						-webkit-user-select: none;
+						-moz-user-select: none;
+						-ms-user-select: none;
+						user-select: none;
+						width: 100%;
+						color: #000000;
+
+						&:hover {
+							animation-name: gradient;
+							-webkit-animation-name: gradient;
+							animation-duration: 2s;
+							-webkit-animation-duration: s;
+							animation-iteration-count: 1;
+							-webkit-animation-iteration-count: 1;
+							animation-fill-mode: forwards;
+							-webkit-animation-fill-mode: forwards;
+						}
+
+						@keyframes gradient {
+							0% {
+							background-position: 0% 50%;
+							}
+							100% {
+							background-position: 100%;
+							}
 						}
 					}
 				}

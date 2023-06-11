@@ -18,7 +18,12 @@
 		justify-content: center;
 		align-items: center;
 		box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.5);
-		background: rgba(255, 233, 174, 0.8);
+		background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+		// background: hsla(340, 80%, 69%, 1);
+		// background: linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+		// background: -moz-linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+		// background: -webkit-linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
 		backdrop-filter: blur(5px);
 		-webkit-backdrop-filter: blur(5px);
 		border-radius: 10px;
@@ -81,24 +86,49 @@
 			}
 			//---------Login Button---------
 			.login-btn {
-				margin: auto;
-				margin-top: 1rem;
-				width: 100%;
-				padding: 0.5rem 1rem;
-				font-size: 1rem;
-				font-weight: 600;
-				color: var(--accent-color);
-				background-color: var(--logo-color);
-				border: 1px solid var(--accent-color);
-				border-radius: 10px;
-				cursor: pointer;
-				box-shadow: none;
-				outline: none;
+				margin-top: 10px;
+				-webkit-appearance: none;
+				background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+				background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+				background-size: 500%;
 				border: none;
-				&:focus {
-					box-shadow: none;
-					outline: none;
-					border: none;
+				border-radius: 5rem;
+				box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+				color: #fff;
+				cursor: pointer;
+				font: 1.5em Raleway, sans-serif;
+				font-weight: bold;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				height: 4rem;
+				letter-spacing: 0.05em;
+				outline: none;
+				-webkit-tap-highlight-color: transparent;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				width: 100%;
+				color: #000000;
+
+				&:hover {
+					animation-name: gradient;
+					-webkit-animation-name: gradient;
+					animation-duration: 2s;
+					-webkit-animation-duration: s;
+					animation-iteration-count: 1;
+					-webkit-animation-iteration-count: 1;
+					animation-fill-mode: forwards;
+					-webkit-animation-fill-mode: forwards;			 
+				}
+
+				@keyframes gradient {
+					0% {
+					  background-position: 0% 50%;
+					}
+					100% {
+					  background-position: 100%;
+					}
 				}
 			}
 			.social-login {
@@ -116,16 +146,15 @@
 				.btn {
 					width: 40%;
 					min-width: 50px;
-					padding: 0.5rem 1rem;
+					padding: 0.7rem 1rem;
 					font-size: 1rem;
 					font-weight: 600;
-					color: var(--accent-color);
-					background-color: var(--logo-color);
-					border-radius: 10px;
+					color: #000000;
+					border-radius: 5rem;
 					cursor: pointer;
 					box-shadow: none;
 					outline: none;
-					border: none;
+					border: 2px solid #000000;
 					&:focus {
 						box-shadow: none;
 						outline: none;
@@ -141,11 +170,22 @@
 				.google-btn {
 					min-width: 220px;
 				}
+
+				.google-btn:hover {
+					background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+					border: none;
+				}
+
 				//---------Sign Up Button---------
 				.signup-btn {
 					@media screen and (max-width: 850px) {
 						min-width: 220px;
 					}
+				}
+
+				.signup-btn:hover {
+					background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+					border: none;
 				}
 			}
 		}
@@ -163,9 +203,11 @@
 	padding: 10px;
 	margin: auto;
 	.banner {
+		display: flex;
+		align-items: center;
 		margin-top: 7rem;
 		margin-bottom: 2rem;
-		background-color: rgba(255, 167, 52, 0.8);
+		background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
 		border-radius: 10px;
 		padding: 7px;
 		word-spacing: 0.2rem;
@@ -213,13 +255,14 @@
 			//---------Forms---------
 			form {
 				width: 100%;
-				background-color: rgba(255, 245, 219, 0.85);
+				background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
 				border-radius: 10px;
 				padding: 10px;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: flex-start;
+				opacity: 0.9;
 				&.student-form,
 				&.interview-form {
 					margin-top: 1rem;
@@ -287,7 +330,7 @@
 					font-size: 1rem;
 					font-weight: 700;
 					color: var(--accent-color);
-					background-color: var(--logo-color);
+					background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 					border-radius: 10px;
 					cursor: pointer;
 					box-shadow: none;
@@ -297,6 +340,10 @@
 						box-shadow: none;
 						outline: none;
 						border: none;
+					}
+					&:hover {
+						background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+						color: #000000;
 					}
 				}
 			}
@@ -308,7 +355,7 @@
 				margin-top: 1rem;
 				opacity: 0.8;
 				text-align: center;
-				background-color: rgba(255, 167, 52, 0.8);
+				background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
 				border-radius: 10px;
 				padding: 7px;
 				word-spacing: 0.2rem;

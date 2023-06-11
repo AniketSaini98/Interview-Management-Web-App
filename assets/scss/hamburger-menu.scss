@@ -1,6 +1,8 @@
 //---------Header---------
 header {
-	background-color: var(--background-color);
+	// background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
 	width: 100%;
 	height: 100px;
 	display: flex;
@@ -10,9 +12,10 @@ header {
 	top: 0;
 	left: 0;
 	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
-	opacity: 0.7;
+	opacity: 0.9;
 	z-index: 1;
 	overflow: hidden;
+
 	//---------Media Query---------
 	&.signed {
 		@media screen and (max-width: 730px) {
@@ -89,6 +92,7 @@ header {
 				display: flex;
 				align-items: center;
 				justify-content: center;
+
 				//---------Hamburger Line---------
 				& > div {
 					position: relative;
@@ -100,6 +104,7 @@ header {
 					align-items: center;
 					justify-content: center;
 					transition: all 0.4s ease;
+					
 					//---------Hamburger Lines - Top & Bottom---------
 					&::before,
 					&::after {
@@ -114,6 +119,13 @@ header {
 					//---------Move Lines Down---------
 					&::after {
 						top: 10px;
+					}
+
+					&h1 {
+						width: 70%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
 					}
 				}
 			}

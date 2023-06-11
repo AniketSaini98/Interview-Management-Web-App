@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 //Create the DB Schema
-const enrolmentSchema = new mongoose.Schema(
+const enrollmentSchema = new mongoose.Schema(
 	{
 		course: {
 			type: mongoose.Schema.Types.ObjectId,
@@ -19,7 +19,7 @@ const enrolmentSchema = new mongoose.Schema(
 );
 
 //Create a Model/Collection to populate the data with the same name for the schema in the DB
-const Enrolment = mongoose.model("Enrolment", enrolmentSchema);
+const Enrollment = mongoose.model("Enrollment", enrollmentSchema);
 
 //Export the Model
-module.exports = Enrolment;
+module.exports = Enrollment;

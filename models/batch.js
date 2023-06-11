@@ -15,10 +15,10 @@ const batchSchema = new mongoose.Schema(
 				ref: "Student",
 			},
 		],
-		enrolments: [
+		enrollments: [
 			{
 				type: mongoose.Schema.Types.ObjectId,
-				ref: "Enrolment",
+				ref: "Enrollment",
 			},
 		],
 	},

@@ -53,7 +53,7 @@
 				<!-- Student Batch -->
 				<p>
 					<strong class="stud">Batch:&ensp;</strong
-					><span><%= student.batch.name %></span>
+					><span><%= student.batch ? student.batch.name : '' %></span>
 				</p>
 				<!-- Student Status -->
 				<p>
@@ -105,7 +105,11 @@
 								<%= new
 								Date(interview.company.date).toLocaleDateString() %>
 							</td>
-							<td><%= interview.result.result %></td>
+							<% if (interview && interview.result) { %>
+								<td><%= interview.result.result %></td>
+							  <% } else { %>
+								<td>No result available</td>
+							<% } %>
 						</tr>
 						<% } %>
 					</tbody>
@@ -118,14 +122,3 @@
 		</div>
 	</div>
 </div>
-
-<!-- -------------- -->
-<!-- Variable Items -->
-<!-- -------------- -->
-<!-- id="student-heading-1" -->
-<!-- data-bs-target="#student-1" -->
-<!-- aria-controls="student-1" -->
-<!-- id="student-1" -->
-<!-- aria-labelledby="student-heading-1" -->
-<!-- data-bs-parent="#students" -->
-<!-- -------------- -->

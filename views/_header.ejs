@@ -7,17 +7,27 @@
 <!-- User Flag -->
 <input type="hidden" id="User" value="false" />
 <!-- Header -->
-<header style="justify-content: center" class="unsigned">
+<header class="unsigned">
 	<!-- Logo -->
 	<div
 		class="logo"
 		onclick="window.location.href='/';"
 		style="cursor: pointer"
 	>
-		<img src="<%= assetPath('images/logo.png') %>" alt="Logo" />
+		<!-- <img src="<%= assetPath('images/logo.png') %>" alt="Logo" /> -->
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_wRgDGWTbVl.json"  background="transparent"  speed="0.8"  style="width: 90px; height: 90px; margin-top: 15px;"  loop  autoplay></lottie-player>
+		<p>Career Camp</p>
 	</div>
 	<!-- Title -->
-	<h1>Employee Login</h1>
+	<div class="main-heading">
+		<h1>Employee Login</h1>
+		<!-- <img src="<%= assetPath('images/emp_login.png') %>" alt="Employee Login Logo" /> -->
+		<!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_UW8DlCRljO.json"  background="transparent"  speed="1"  style="width: 90px; height: 90px;"  loop autoplay></lottie-player> -->
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_xlmz9xwm.json"  background="transparent"  speed="1"  style="width: 90px; height: 90px; margin-left: 30px;"  loop  autoplay></lottie-player>
+	</div>
 </header>
 <% } %>
 
@@ -33,40 +43,74 @@
 		onclick="window.location.href='/';"
 		style="cursor: pointer"
 	>
-		<img src="<%= assetPath('images/logo.png') %>" alt="Logo" />
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_wRgDGWTbVl.json"  background="transparent"  speed="0.8"  style="width: 90px; height: 90px; margin-top: 15px;"  loop  autoplay></lottie-player>
+		<!-- <img src="<%= assetPath('images/logo.png') %>" alt="Logo" /> -->
 
 		<p>CAREER CAMP</p>
 	</div>
+	
 	<!-- Navbar -->
 	<nav class="navbar">
 		<!-- Normal Nav Links -->
 		<ul class="normal">
 			<li class="nav-links">
-				<a href="/" class="active home"
-					>Dashboard&ensp;<i class="fa-solid fa-house"></i
-				></a>
+				<a href="/" id="home-link" class="active home"
+					>Dashboard&ensp;
+					<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+					<lord-icon
+						src="https://cdn.lordicon.com/hjbsbdhw.json"
+						trigger="hover"
+						colors="primary:#3a3347,secondary:#f24c00,tertiary:#b26836,quaternary:#ebe6ef"
+						style="width:30px;height:30px">
+					</lord-icon>
+					<!-- <i class="fa-solid fa-house"></i> -->
+				</a>
 			</li>
 			<li class="nav-links">
-				<a href="/jobs" class="jobs"
-					>Job Portal&ensp;<i class="fa-solid fa-briefcase"></i
-				></a>
+				<a href="/jobs" id="jobs-link" class="jobs">
+					Job Portal&ensp;
+					<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+					<lord-icon
+						src="https://cdn.lordicon.com/gkstbnbz.json"
+						trigger="hover"
+						colors="primary:#121331,secondary:#b26836,tertiary:#ffc738"
+						style="width:30px;height:30px">
+					</lord-icon>
+					<!-- <i class="fa-solid fa-briefcase"></i> -->
+				</a>
 			</li>
 			<li class="nav-links">
-				<a href="/profile/<%= locals.user.id %>" class="profile"
-					>Profile&ensp;<i class="fa-solid fa-user"></i
-				></a>
+				<a href="/profile/<%= locals.user.id %>" id="profile-link" class="profile">
+					Profile&ensp;
+					<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+					<lord-icon
+						src="https://cdn.lordicon.com/ajkxzzfb.json"
+						trigger="hover"
+						colors="primary:#ffc738,secondary:#4bb3fd"
+						style="width:30px;height:30px">
+					</lord-icon>
+					<!-- <i class="fa-solid fa-user"></i> -->
+				</a>
 			</li>
 			<li class="nav-btns">
 				<a href="/report"
-					>Download Report&ensp;<i class="fa-solid fa-cloud-arrow-down"></i
-				></a>
+					>Download Report&ensp;
+					<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+					<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hdmkzp2n.json"  background="transparent"  speed="1"  style="width: 40px; height: 40px;" hover></lottie-player>
+					<!-- <i class="fa-solid fa-cloud-arrow-down"></i> -->
+				</a>
 			</li>
 			<li class="nav-btns">
-				<a href="/destroy-session"
-					>Logout&ensp;<i class="fa-solid fa-right-from-bracket"></i
-				></a>
+				<a href="/destroy-session">
+					Logout&ensp;
+					<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+					<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_vmlm0zew.json"  background="transparent"  speed="1"  style="width: 40px; height: 40px;" hover   ></lottie-player>
+					<!-- <i class="fa-solid fa-right-from-bracket"></i> -->
+				</a>
 			</li>
 		</ul>
+
 		<!-- Responsive Nav Links -->
 		<ul class="responsive">
 			<li class="nav-links">
@@ -115,11 +159,16 @@
 								></a>
 							</li>
 							<li class="nav-btns">
-								<a href="/report"
-									>Download Report&ensp;<i
-										class="fa-solid fa-cloud-arrow-down"
-									></i
-								></a>
+								<a href="/report">Download Report&ensp;
+									<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+									<lord-icon
+										src="https://cdn.lordicon.com/ugbgnnqc.json"
+										trigger="hover"
+										colors="primary:#242424,secondary:#f4dc9c"
+										style="width:250px;height:250px">
+									</lord-icon>
+									<!-- <i class="fa-solid fa-cloud-arrow-down"></i> -->
+								</a>
 							</li>
 							<li class="nav-btns">
 								<a href="/destroy-session"

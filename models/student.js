@@ -71,14 +71,3 @@ const Student = mongoose.model("Student", studentSchema);
 
 //Export the Model/Collection
 module.exports = Student;
-
-// ------------- Prebuilt / Inbuilt MongoDB Validators -------------
-//Predefined MongoDB Validate Function
-// validate: {
-// 	//Predefined MongoDB Validators
-// 	validator: function (value) {
-// 		return value.length >= 6;
-// 	},
-// 	message: "Password should be at least 6 characters long",
-// },
-// ------------- Prebuilt / Inbuilt MongoDB Validators -------------

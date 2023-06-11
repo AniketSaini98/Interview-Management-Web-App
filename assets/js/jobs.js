@@ -9,7 +9,7 @@
 			const newCard = card.cloneNode(true);
 			newCard.style.display = "inline-block";
 			newCard.querySelector(".card-header").textContent =
-				job.company_name + " 🏨";
+				job.company_name;
 			newCard.querySelector(".card-title").textContent = job.job_title;
 			span1.textContent = `: ${job.interview_date}`;
 			newCard.querySelectorAll(".card-text")[0].appendChild(span1);
