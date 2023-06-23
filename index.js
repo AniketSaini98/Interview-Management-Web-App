@@ -66,6 +66,7 @@ const passportLocal = require("./config/passport-local-strategy");
 
 //Requires the Passport Google OAuth-2 Strategy used for the Authentication
 const passportGoogle = require("./config/passport-google-oauth2-strategy");
+const OAuthStrategy = require('passport-oauth').OAuthStrategy;
 
 
 //Middleware - CORS

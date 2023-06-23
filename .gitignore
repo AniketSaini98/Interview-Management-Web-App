@@ -5,4 +5,3 @@ package-lock.json
 production_logs/
 .vscode/
 .vercel
-assets/images
