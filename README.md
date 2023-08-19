@@ -66,7 +66,7 @@ SECRET_KEY=your_secret_key
 ## Screenshots
 
 ### Login Page
-![Alt text](/assets/1.1.Employee_Login.png)
+![Alt text](/assets/1.Employee_Login.png)
 
 ### SignUp Page
 ![Alt text](/assets/Employee_SignUp_Page.png)
