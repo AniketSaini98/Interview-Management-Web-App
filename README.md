@@ -63,6 +63,26 @@ SECRET_KEY=your_secret_key
 <img src="https://img.icons8.com/?size=512&id=ZMc42tPbG32H&format=png" alt="NodeJS" width="100px" height="100px"/>
 `Bootstrap: CSS framework for responsive design.`
 
+## Screenshots
+
+### Login Page
+![Alt text](/assets/1.1.Employee_Login.png)
+
+### SignUp Page
+![Alt text](/assets/Employee_SignUp_Page.png)
+
+### Career Camp Landing Page
+![Alt text](/assets/Career_Camp.png)
+
+### Career Camp With Student & Interview Details Page
+![Alt text](/assets/Career_Camp_Student_&_Interview_Details.png)
+
+### Jobs Details Page
+![Alt text](/assets/Job_Portal.png)
+
+### Employee Profile Details Page
+![Alt text](/assets/Profile.png)
+
 ## Contributing
 
 Feel free to contribute by submitting pull requests. Please follow the coding and commit message conventions.
