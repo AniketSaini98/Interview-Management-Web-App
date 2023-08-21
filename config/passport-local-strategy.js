@@ -12,7 +12,7 @@ const bcrypt = require("bcryptjs");
 passport.use(
 	new LocalStrategy(
 		{
-			usernameField: "email", //The one in the DB
+			usernameField: "email",
 			passReqToCallback: true,
 		},
 		async (req, email, password, done) => {
