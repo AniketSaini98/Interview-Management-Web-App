@@ -66,7 +66,7 @@ const passportLocal = require("./config/passport-local-strategy");
 
 //Requires the Passport Google OAuth-2 Strategy used for the Authentication
 const passportGoogle = require("./config/passport-google-oauth2-strategy");
-const OAuthStrategy = require('passport-oauth').OAuthStrategy;
+// const OAuthStrategy = require('passport-oauth').OAuthStrategy;
 
 
 //Middleware - CORS
@@ -137,10 +137,10 @@ app.set("views", path.join(__dirname, "views"));
 app.use(
 	session({
 		//Cookie Name
-		name: "PlacementCellWebApplication",
+		name: "InterviewManagementWebApplication",
 
 		//Secret Key for encrypting the session cookie
-		secret: env.session_cookie_key,
+		secret: "something",
 
 		//Don't save the uninitialized session
 		saveUninitialized: false,
@@ -158,10 +158,7 @@ app.use(
 		store: MongoStore.create(
 			{
 				//DB Connection URL
-				mongoUrl: `${env.db}`,
-
-				//Interacts with the mongoose to connect to the MongoDB
-				mongooseConnection: db,
+				mongoUrl: "mongodb+srv://aniketsaini65:BYXQPqaHy5fKcYYQ@interview-management.sc8pcul.mongodb.net/?retryWrites=true&w=majority",
 
 				//To auto remove the store
 				autoRemove: "disabled",
